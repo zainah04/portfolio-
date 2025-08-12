@@ -1,0 +1,75 @@
+/* Reset and base styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f9f6f0;  /* Cream background */
+    color: #2f4f4f;             /* Dark greenish text */
+}
+
+/* Header styles */
+header {
+    background: #3a6b35;       /* Rich green */
+    color: #f9f6f0;            /* Cream text */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Navigation links in header */
+header nav a {
+    color: #f9f6f0;            /* Cream links */
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #d4e09b;            /* Light green hover */
+}
+
+/* Section styling */
+section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Project cards */
+.project-card {
+    background: #f0ead8;        /* Cream card background */
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(58, 107, 53, 0.3); /* subtle green shadow */
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background: #3a6b35;        /* Same rich green */
+    color: #f9f6f0;             /* Cream text */
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    section {
+        padding: 1rem;
+    }
+    .project-card {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+}
+
